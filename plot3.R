@@ -15,3 +15,6 @@ with(data, points(V1,V8, col="red", type="l"))
 with(data, points(V1,V9, col="blue", type="l"))
 legend("topright", lty=1, col = c("black", "red", "blue"), 
        legend = c("Sub_Metering_1", "Sub_Metering_2", "Sub_Metering_3"))
+
+# close the specified plot 
+dev.off()
