@@ -26,3 +26,6 @@ legend("topright", lty=1, col = c("black", "red", "blue"),
        legend = c("Sub_Metering_1", "Sub_Metering_2", "Sub_Metering_3"))
 
 with(data, plot(V1,V4, type="l", xlab = "datetime", ylab = "Global_reactive_power"))
+
+# close the specified plot 
+dev.off()
