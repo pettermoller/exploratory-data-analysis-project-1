@@ -8,3 +8,6 @@ data <- data %>% mutate(V1 = as.POSIXct(dmy_hms(as.character(paste(V1, V2)))),
 
 # create plot
 with(data, plot(V1,V3, type="l", xlab = "", ylab = "Global Active Power (kilowatts)"))
+
+# closes the specified plot 
+dev.off()
